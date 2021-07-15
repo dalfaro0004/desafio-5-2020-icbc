@@ -2,18 +2,17 @@
 [![Platform](https://img.shields.io/badge/platform-nodejs-lightgrey.svg?style=flat)](https://developer.ibm.com/node/)
 [![](https://img.shields.io/discord/734849667174498465?logo=discord)](https://discord.gg/Q9At74C)
 
-# Desafio 05  | ICBC
+# Desafio 05  | Empresa XYZ
 
-- [1. Acerca de ICBC](#1-acerca-de-icbc)
-- [2. Reto de negocio](#2-reto-de-negocio)
-- [3. Objetivo](#3-objetivo)
-  - [3.1. Tecnología](#31-tecnología)
-- [4. Desarrollando la solución](#4-desarrollando-la-solución)
-  - [4.1. Pre-requisitos](#41-pre-requisitos)
-  - [4.2. Resumen de las tareas](#42-resumen-de-las-tareas)
-  - [4.3. Desarrollo](#43-desarrollo)
-- [5. Envío](#5-envío)
-- [6. Sobre la evaluación](#6-sobre-la-evaluación)
+- [1. Reto de negocio](#2-reto-de-negocio)
+- [2. Objetivo](#3-objetivo)
+  - [2.1. Tecnología](#31-tecnología)
+- [3. Desarrollando la solución](#4-desarrollando-la-solución)
+  - [3.1. Pre-requisitos](#41-pre-requisitos)
+  - [3.2. Resumen de las tareas](#42-resumen-de-las-tareas)
+  - [3.3. Desarrollo](#43-desarrollo)
+- [4. Envío](#5-envío)
+- [5. Sobre la evaluación](#6-sobre-la-evaluación)
 
 ## Para Ayudarte
 
@@ -21,33 +20,22 @@
 - [Solución de problemas](#solución-de-problemas)
 - [Licencia](#licencia)
 
-## 1. Acerca de ICBC
 
-ICBC –Industrial and Commercial Bank of China- es el banco más grande del mundo en términos de capitalización bursátil, depósitos y rentabilidad y ocupa el sexto lugar de las marcas más valoradas del mundo según la prestigiosa publicación Visual Capitalist. Posee presencia en Argentina desde 2011 tras adquirir el paquete accionario 80% de las acciones del Standard Bank Argentina y sus socios locales. La subsidiaria Argentina es un Banco Universal que atiende a todos los segmentos desde Individuos, Pequeñas y Mediana Empresas y Grandes Corporaciones ofreciendo toda una gama de productos transaccionales, de préstamos, de inversión, del mercado de Capitales y Fondos Comunes de Inversión.
+## 1. Reto de negocio
+
+El proceso de transformación digital de Empresa XYZ, demanda una búsqueda continua de talento con skills digitales. El reclutamiento de este talento, escaso en el mercado, representa un enorme desafío para el equipo de RRHH y de IT. El time-to-fill promedio para el reclutamiento de recursos con estos perfiles es actualmente de 6 meses. Una de las barreras que impide mejorar estos tiempos es la falta de disponibilidad de los supervisores y team leads para realizar las entrevistas a los candidatos.
  
-La dotación del Banco alcanza los 3.670 empleados (diciembre 2019). En cuanto a clientes, se atiende a más de 815.000 individuos y más de 50.700 Corporaciones, Empresas, PyMEs y Comercios.
+El desafío que propone el Empresa XYZ es crear un entrevistador virtual, basado en IA, que pueda ser usado para reclutar candidatos tanto para posiciones entry-level como para niveles de experiencia senior y semi-senior. El entrevistador virtual, a través de una app, deberá llevar una entrevista de forma 100% autónoma y al finalizarla ser capaz de establecer un score y una recomendación de hiring o no. El objetivo es reducir el esfuerzo inicial de pre-selección de candidatos y sólo realizar la entrevista con los que haya seleccionado el algoritmo.
 
-<div align="center">
-    <a href="https://www.youtube.com/watch?v=kjgVSXtO9p4">
-       <img width="50%" src="./doc/source/images/MBTC2020-DESAFIO5-ICBC-ES.png" alt='video'>
-    </a>
-</div>
+## 2. Objetivo
 
-## 2. Reto de negocio
+Empresa XYZ cuenta constantemente con vacantes para desarrollo de software, por lo que este desafío se centrará en una entrevista a desarrolladores con conocimientos en Angular y Java. El participante entrenará un servicio de IA para calificar o soportar las respuestas de los candidatos.
 
-El proceso de transformación digital de ICBC Argentina, demanda una búsqueda continua de talento con skills digitales. El reclutamiento de este talento, escaso en el mercado, representa un enorme desafío para el equipo de RRHH y de IT. El time-to-fill promedio para el reclutamiento de recursos con estos perfiles es actualmente de 6 meses. Una de las barreras que impide mejorar estos tiempos es la falta de disponibilidad de los supervisores y team leads para realizar las entrevistas a los candidatos.
- 
-El desafío que propone el ICBC es crear un entrevistador virtual, basado en IA, que pueda ser usado para reclutar candidatos tanto para posiciones entry-level como para niveles de experiencia senior y semi-senior. El entrevistador virtual, a través de una app, deberá llevar una entrevista de forma 100% autónoma y al finalizarla ser capaz de establecer un score y una recomendación de hiring o no. El objetivo es reducir el esfuerzo inicial de pre-selección de candidatos y sólo realizar la entrevista con los que haya seleccionado el algoritmo.
-
-## 3. Objetivo
-
-ICBC Argentina cuenta constantemente con vacantes para desarrollo de software, por lo que este desafío se centrará en una entrevista a desarrolladores con conocimientos en Angular y Java. El participante entrenará un servicio de IA para calificar o soportar las respuestas de los candidatos.
-
-Para este desafío ICBC Argentina usará la herramienta [Watson Discovery](https://cloud.ibm.com/catalog/services/discovery) para construir un modelo de busqueda de conocimiento que le permita validar las respuestas de los candidatos con la evidencia propicia.
+Para este desafío Empresa XYZ usará la herramienta [Watson Discovery](https://cloud.ibm.com/catalog/services/discovery) para construir un modelo de busqueda de conocimiento que le permita validar las respuestas de los candidatos con la evidencia propicia.
 
 La idea principal del reto es entrenar una colección con documentos acerca de Angular y Java que responden a las preguntas que se hacen en la entrevista. El participante mejorará el entendimiento que tiene Watson Discovery entre las posibles respuestas y los documumentos provistos.
 
-### 3.1. Tecnología
+### 2.1. Tecnología
 
 [Watson Discovery](https://cloud.ibm.com/catalog/services/discovery) es un motor de análisis de contenido y búsqueda cognitiva a las aplicaciones para identificar patrones, tendencias e información útil que impulse una mejor toma de decisiones. Unifica de forma segura datos estructurados y no estructurados con contenido enriquecido y utiliza un lenguaje de consulta simplificado para eliminar la necesidad de filtrar manualmente los resultados.
 
@@ -59,25 +47,25 @@ La idea principal del reto es entrenar una colección con documentos acerca de A
 </div>
 
 
-## 4. Desarrollando la solución
+## 3. Desarrollando la solución
 
-### 4.1. Pre-requisitos
+### 3.1. Pre-requisitos
 
 Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos:
 
 - Regístrate en [Maratón Behind the Code](https://maratona.dev/es) y confirma tu e-mail de registro.
 - Tener una cuenta en [IBM Cloud](https://ibm.biz/registro-maratona), que puede ser una cuenta GRATUITA o de pago (no es necesario registrarse en el evento con el mismo correo electrónico utilizado para crear tu cuenta IBM Cloud).
 
-### 4.2. Resumen de las tareas
+### 3.2. Resumen de las tareas
 
 1. Crear servicio de [Watson Discovery](https://cloud.ibm.com/catalog/services/discovery) en IBM Cloud
 2. Acceder a las páginas cuyas URLs estan listadas en el númeral [4.3](#43-desarrollo)
 3. Crear documentos en formato JSON con la forma especificada en el númeral [4.3](#43-desarrollo)
 4. Crear una colleción nueva en Watson Discovery y hacer upload de sus documentos
 5. Entrenar un modelo de relevancia con _queries_ en Watson Discovery basado en los documentos previstos
-6. Accede a la página https://icbc.maratona.dev, prueba y envia tu solución.
+6. Accede a la página https://Empresa XYZ.maratona.dev, prueba y envia tu solución.
 
-### 4.3. Desarrollo
+### 3.3. Desarrollo
 
 Durante el desafío, enfrentará dos problemas comunes para un científico de datos, el de estructurar datos y curar modelos de Machine Learning. El primero se encontrará al extraer información de las páginas web que se enumeran a continuación, y el segundo se encontrará al probar el modelo en Watson Discovery con consultas personalizadas. 
 
@@ -105,7 +93,7 @@ A partir de estas URLs (_exclusivamente_), pedimos que cree documentos JSON con 
   "url": "URL original del contendio"
 }
 ```
-**Los nombres de las claves deben ser exactamente los mismos para garantizar que su modelo pueda evaluarse correctamente**. Usted es responsable por la creación consitente de los documentos, recuerde que la `url` debe estar dentro del listado provisto y el `title` debe ser de la página o sección según usted lo considere. Recuerde que el formato JSON no permite saltos de lineas ni algunos caracteres especiales los cuales deben ser manipulados correctamente. (Cree los documentos según el contexto del proceso de selección de ICBC Argentina)
+**Los nombres de las claves deben ser exactamente los mismos para garantizar que su modelo pueda evaluarse correctamente**. Usted es responsable por la creación consitente de los documentos, recuerde que la `url` debe estar dentro del listado provisto y el `title` debe ser de la página o sección según usted lo considere. Recuerde que el formato JSON no permite saltos de lineas ni algunos caracteres especiales los cuales deben ser manipulados correctamente. (Cree los documentos según el contexto del proceso de selección de Empresa XYZ)
 
 [Encuente aqui un ejemplo de documento JSON completo](./doc/source/dataset/que_es_angular.json).
 
@@ -113,7 +101,7 @@ Después de crear los documentos, debe crear una colección en Watson Discovery 
 
 > Consejo: el paso de cargar documentos en Watson Discovery puede tardar unos minutos y, a veces, fallar. Se recomienda que solo se cargue un documento a la vez para asegurarse de que no haya fallas.
 
-A continuación encuentra las preguntas que ICBC Argentina usa en la entrevista y algunos ejemplos de respuestas posibles para cada una. Usted debe usar su propio conocimiento o conocimiento que encuentre en fuentes de información para entrenar el modelo de relevancia con **posibles frases de respuestas** (_queries_) que los candidatos puedan usar contra los documentos que usted ha cargado en la colección de Watson Discovery. 
+A continuación encuentra las preguntas que Empresa XYZ usa en la entrevista y algunos ejemplos de respuestas posibles para cada una. Usted debe usar su propio conocimiento o conocimiento que encuentre en fuentes de información para entrenar el modelo de relevancia con **posibles frases de respuestas** (_queries_) que los candidatos puedan usar contra los documentos que usted ha cargado en la colección de Watson Discovery. 
 
 
 <div align="center">
@@ -195,21 +183,21 @@ Su modelo de relevancia debe tener al menos **50 _queries_** entrenadas, cada un
 > Recomendación: Entrenar primero los 50 _queries_ relacionados a los documentos y despues adicionar con frases no relacionadas al tema si asi lo considera ;)
 
 
-## 5. Envío
+## 4. Envío
 
-Para realizar el envío, primero debe acceder a la siguiente aplicación: https://icbc.maratona.dev/ y completar el formulario con las credenciales de su instancia de **Watson Discovery** y los **IDs** de su colección. En esta página podrá probar su modelo antes de enviarlo.
+Para realizar el envío, primero debe acceder a la siguiente aplicación: https://Empresa XYZ.maratona.dev/ y completar el formulario con las credenciales de su instancia de **Watson Discovery** y los **IDs** de su colección. En esta página podrá probar su modelo antes de enviarlo.
 
 🚨 **PRUEBA TU SOLUCIÓN ANTES DE PRESENTARLA** 🚨
 
 Después de realizar las pruebas, haga clic en el botón en la esquina inferior derecha para ENVIAR su solución, como se muestra en la imagen a continuación, y complete el formulario con su dirección de correo electrónico utilizada para la inscripción en MARATONA 2020.
 
 Credenciales:
-<img align='center' src="./doc/source/images/ICBC_CREDS.png" alt="submissão"></img>
+<img align='center' src="./doc/source/images/Empresa XYZ_CREDS.png" alt="submissão"></img>
 Enviar:
-<img align='center' src="./doc/source/images/ICBC_SEND.png" alt="submissão"></img>
+<img align='center' src="./doc/source/images/Empresa XYZ_SEND.png" alt="submissão"></img>
 
 
-## 6. Sobre la evaluación
+## 5. Sobre la evaluación
 
 Nuestro sistema de evaluación automática realizará consultas para su modelo y analizará si las respuestas obtenidas son consistentes con los documentos esperados. Los documentos de su solución **deben** contener las claves con los nombres especificados aquí, `body`, `title`, `url`, con sus respectivos valores, para que la validación sea exitosa.
 
