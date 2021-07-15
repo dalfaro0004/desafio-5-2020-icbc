@@ -2,7 +2,7 @@
 [![Platform](https://img.shields.io/badge/platform-nodejs-lightgrey.svg?style=flat)](https://developer.ibm.com/node/)
 [![](https://img.shields.io/discord/734849667174498465?logo=discord)](https://discord.gg/Q9At74C)
 
-# Desafio 05 | ICBC
+# Desafio 05  | ICBC
 
 - [1. Acerca de ICBC](#1-acerca-de-icbc)
 - [2. Reto de negocio](#2-reto-de-negocio)
